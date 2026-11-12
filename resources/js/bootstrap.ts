@@ -1,0 +1,3 @@
+// Client bootstrap configuration
+export {};
+
