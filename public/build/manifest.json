@@ -1,0 +1,234 @@
+{
+  "_ApplicationLogo-D6HoR2LO.js": {
+    "file": "assets/ApplicationLogo-D6HoR2LO.js",
+    "name": "ApplicationLogo",
+    "imports": [
+      "resources/js/app.tsx"
+    ]
+  },
+  "_AuthenticatedLayout-ZS7IAXkD.js": {
+    "file": "assets/AuthenticatedLayout-ZS7IAXkD.js",
+    "name": "AuthenticatedLayout",
+    "imports": [
+      "_ApplicationLogo-D6HoR2LO.js",
+      "_transition-D_qwRFtI.js",
+      "resources/js/app.tsx"
+    ]
+  },
+  "_GuestLayout-B6AQPx-3.js": {
+    "file": "assets/GuestLayout-B6AQPx-3.js",
+    "name": "GuestLayout",
+    "imports": [
+      "_ApplicationLogo-D6HoR2LO.js",
+      "resources/js/app.tsx"
+    ]
+  },
+  "_InputLabel-CiyC1FT6.js": {
+    "file": "assets/InputLabel-CiyC1FT6.js",
+    "name": "InputLabel",
+    "imports": [
+      "resources/js/app.tsx"
+    ]
+  },
+  "_PrimaryButton-DBqM5tq5.js": {
+    "file": "assets/PrimaryButton-DBqM5tq5.js",
+    "name": "PrimaryButton",
+    "imports": [
+      "resources/js/app.tsx"
+    ]
+  },
+  "_TextInput-CsMUPII2.js": {
+    "file": "assets/TextInput-CsMUPII2.js",
+    "name": "TextInput",
+    "imports": [
+      "resources/js/app.tsx"
+    ]
+  },
+  "_transition-D_qwRFtI.js": {
+    "file": "assets/transition-D_qwRFtI.js",
+    "name": "transition",
+    "imports": [
+      "resources/js/app.tsx"
+    ]
+  },
+  "resources/js/Pages/Auth/ConfirmPassword.tsx": {
+    "file": "assets/ConfirmPassword-BqtzsQGV.js",
+    "name": "ConfirmPassword",
+    "src": "resources/js/Pages/Auth/ConfirmPassword.tsx",
+    "isDynamicEntry": true,
+    "imports": [
+      "_TextInput-CsMUPII2.js",
+      "_InputLabel-CiyC1FT6.js",
+      "_PrimaryButton-DBqM5tq5.js",
+      "_GuestLayout-B6AQPx-3.js",
+      "resources/js/app.tsx"
+    ]
+  },
+  "resources/js/Pages/Auth/ForgotPassword.tsx": {
+    "file": "assets/ForgotPassword-BJI8wOkO.js",
+    "name": "ForgotPassword",
+    "src": "resources/js/Pages/Auth/ForgotPassword.tsx",
+    "isDynamicEntry": true,
+    "imports": [
+      "_TextInput-CsMUPII2.js",
+      "_PrimaryButton-DBqM5tq5.js",
+      "_GuestLayout-B6AQPx-3.js",
+      "resources/js/app.tsx"
+    ]
+  },
+  "resources/js/Pages/Auth/Login.tsx": {
+    "file": "assets/Login-CNgyypMZ.js",
+    "name": "Login",
+    "src": "resources/js/Pages/Auth/Login.tsx",
+    "isDynamicEntry": true,
+    "imports": [
+      "resources/js/app.tsx",
+      "_TextInput-CsMUPII2.js",
+      "_InputLabel-CiyC1FT6.js",
+      "_PrimaryButton-DBqM5tq5.js",
+      "_GuestLayout-B6AQPx-3.js"
+    ]
+  },
+  "resources/js/Pages/Auth/Register.tsx": {
+    "file": "assets/Register-DeT0iZJ4.js",
+    "name": "Register",
+    "src": "resources/js/Pages/Auth/Register.tsx",
+    "isDynamicEntry": true,
+    "imports": [
+      "_TextInput-CsMUPII2.js",
+      "_InputLabel-CiyC1FT6.js",
+      "_PrimaryButton-DBqM5tq5.js",
+      "_GuestLayout-B6AQPx-3.js",
+      "resources/js/app.tsx"
+    ]
+  },
+  "resources/js/Pages/Auth/ResetPassword.tsx": {
+    "file": "assets/ResetPassword-wmVEAe_F.js",
+    "name": "ResetPassword",
+    "src": "resources/js/Pages/Auth/ResetPassword.tsx",
+    "isDynamicEntry": true,
+    "imports": [
+      "_TextInput-CsMUPII2.js",
+      "_InputLabel-CiyC1FT6.js",
+      "_PrimaryButton-DBqM5tq5.js",
+      "_GuestLayout-B6AQPx-3.js",
+      "resources/js/app.tsx"
+    ]
+  },
+  "resources/js/Pages/Auth/VerifyEmail.tsx": {
+    "file": "assets/VerifyEmail-CS0hpdaW.js",
+    "name": "VerifyEmail",
+    "src": "resources/js/Pages/Auth/VerifyEmail.tsx",
+    "isDynamicEntry": true,
+    "imports": [
+      "_PrimaryButton-DBqM5tq5.js",
+      "_GuestLayout-B6AQPx-3.js",
+      "resources/js/app.tsx"
+    ]
+  },
+  "resources/js/Pages/Dashboard.tsx": {
+    "file": "assets/Dashboard-BvSWkh03.js",
+    "name": "Dashboard",
+    "src": "resources/js/Pages/Dashboard.tsx",
+    "isDynamicEntry": true,
+    "imports": [
+      "_AuthenticatedLayout-ZS7IAXkD.js",
+      "resources/js/app.tsx"
+    ]
+  },
+  "resources/js/Pages/Profile/Edit.tsx": {
+    "file": "assets/Edit-l7jUfn48.js",
+    "name": "Edit",
+    "src": "resources/js/Pages/Profile/Edit.tsx",
+    "isDynamicEntry": true,
+    "imports": [
+      "_AuthenticatedLayout-ZS7IAXkD.js",
+      "resources/js/app.tsx",
+      "resources/js/Pages/Profile/Partials/DeleteUserForm.tsx",
+      "resources/js/Pages/Profile/Partials/UpdatePasswordForm.tsx",
+      "resources/js/Pages/Profile/Partials/UpdateProfileInformationForm.tsx"
+    ]
+  },
+  "resources/js/Pages/Profile/Partials/DeleteUserForm.tsx": {
+    "file": "assets/DeleteUserForm-BPkNdU8L.js",
+    "name": "DeleteUserForm",
+    "src": "resources/js/Pages/Profile/Partials/DeleteUserForm.tsx",
+    "isDynamicEntry": true,
+    "imports": [
+      "resources/js/app.tsx",
+      "_TextInput-CsMUPII2.js",
+      "_InputLabel-CiyC1FT6.js",
+      "_transition-D_qwRFtI.js"
+    ]
+  },
+  "resources/js/Pages/Profile/Partials/UpdatePasswordForm.tsx": {
+    "file": "assets/UpdatePasswordForm-CgYGFO4E.js",
+    "name": "UpdatePasswordForm",
+    "src": "resources/js/Pages/Profile/Partials/UpdatePasswordForm.tsx",
+    "isDynamicEntry": true,
+    "imports": [
+      "_TextInput-CsMUPII2.js",
+      "_InputLabel-CiyC1FT6.js",
+      "_PrimaryButton-DBqM5tq5.js",
+      "_transition-D_qwRFtI.js",
+      "resources/js/app.tsx"
+    ]
+  },
+  "resources/js/Pages/Profile/Partials/UpdateProfileInformationForm.tsx": {
+    "file": "assets/UpdateProfileInformationForm-DJ-lT_nZ.js",
+    "name": "UpdateProfileInformationForm",
+    "src": "resources/js/Pages/Profile/Partials/UpdateProfileInformationForm.tsx",
+    "isDynamicEntry": true,
+    "imports": [
+      "_TextInput-CsMUPII2.js",
+      "_InputLabel-CiyC1FT6.js",
+      "_PrimaryButton-DBqM5tq5.js",
+      "_transition-D_qwRFtI.js",
+      "resources/js/app.tsx"
+    ]
+  },
+  "resources/js/Pages/Welcome.tsx": {
+    "file": "assets/Welcome-DFN0ZVwQ.js",
+    "name": "Welcome",
+    "src": "resources/js/Pages/Welcome.tsx",
+    "isDynamicEntry": true,
+    "imports": [
+      "resources/js/app.tsx"
+    ],
+    "assets": [
+      "assets/insn-enfermeria-logo-Blpdyess.png",
+      "assets/enfermeras-medicina-b-DYvzvvJv.png"
+    ]
+  },
+  "resources/js/app.tsx": {
+    "file": "assets/app-DA9Lt9hG.js",
+    "name": "app",
+    "src": "resources/js/app.tsx",
+    "isEntry": true,
+    "dynamicImports": [
+      "resources/js/Pages/Auth/ConfirmPassword.tsx",
+      "resources/js/Pages/Auth/ForgotPassword.tsx",
+      "resources/js/Pages/Auth/Login.tsx",
+      "resources/js/Pages/Auth/Register.tsx",
+      "resources/js/Pages/Auth/ResetPassword.tsx",
+      "resources/js/Pages/Auth/VerifyEmail.tsx",
+      "resources/js/Pages/Dashboard.tsx",
+      "resources/js/Pages/Profile/Edit.tsx",
+      "resources/js/Pages/Profile/Partials/DeleteUserForm.tsx",
+      "resources/js/Pages/Profile/Partials/UpdatePasswordForm.tsx",
+      "resources/js/Pages/Profile/Partials/UpdateProfileInformationForm.tsx",
+      "resources/js/Pages/Welcome.tsx"
+    ],
+    "css": [
+      "assets/app-B34kzGaW.css"
+    ]
+  },
+  "resources/js/assets/enfermeras-medicina-b.png": {
+    "file": "assets/enfermeras-medicina-b-DYvzvvJv.png",
+    "src": "resources/js/assets/enfermeras-medicina-b.png"
+  },
+  "resources/js/assets/insn-enfermeria-logo.png": {
+    "file": "assets/insn-enfermeria-logo-Blpdyess.png",
+    "src": "resources/js/assets/insn-enfermeria-logo.png"
+  }
+}
