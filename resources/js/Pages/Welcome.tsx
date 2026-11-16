@@ -475,10 +475,10 @@ export default function Welcome({ auth }: PageProps) {
           </div>
         </section>
 
-        {/* Marquesina infinita con las banderas (Sección: 150px alto, Banderas: 90px alto) */}
+        {/* Marquesina infinita con las banderas (Fondo transparente, Banderas: 45px alto) */}
         <section
           aria-label="Países participantes"
-          className="relative w-full h-[150px] overflow-hidden flex items-center bg-white/70 border-y border-[#dce8f4] shadow-[inset_0_1px_4px_rgba(0,0,0,0.02)]"
+          className="relative w-full h-[120px] sm:h-[150px] overflow-hidden flex items-center bg-transparent"
         >
           <div className="marquee-container w-full h-full flex items-center">
             {/* Pista 1 */}
@@ -492,7 +492,7 @@ export default function Welcome({ auth }: PageProps) {
                     src={country.src}
                     alt={`Bandera de ${country.name}`}
                     title={country.name}
-                    className="h-[90px] w-auto aspect-[3/2] object-cover rounded-xl shadow-md border border-[#c9d8f0]/90 transition-transform duration-300 hover:scale-105"
+                    className="h-[45px] w-auto aspect-[3/2] object-cover rounded-lg shadow-sm border border-[#c9d8f0]/80 transition-transform duration-300 hover:scale-110"
                   />
                 </div>
               ))}
@@ -509,7 +509,7 @@ export default function Welcome({ auth }: PageProps) {
                     src={country.src}
                     alt={`Bandera de ${country.name}`}
                     title={country.name}
-                    className="h-[90px] w-auto aspect-[3/2] object-cover rounded-xl shadow-md border border-[#c9d8f0]/90 transition-transform duration-300 hover:scale-105"
+                    className="h-[45px] w-auto aspect-[3/2] object-cover rounded-lg shadow-sm border border-[#c9d8f0]/80 transition-transform duration-300 hover:scale-110"
                   />
                 </div>
               ))}
