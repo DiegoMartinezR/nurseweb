@@ -4,6 +4,7 @@ import { PageProps } from '@/types';
 import insnLogo from '../assets/insn-enfermeria-logo.png';
 import nursesTeam from '../assets/enfermeras-medicina-b.png';
 import bannerHero from '../assets/bannerhero.png';
+import bannerHeroMobile from '../assets/bannerheromovil.png';
 import flagPe from '../assets/flags/pe.svg';
 import flagMx from '../assets/flags/mx.svg';
 import flagAr from '../assets/flags/ar.svg';
@@ -457,13 +458,16 @@ export default function Welcome({ auth }: PageProps) {
           <div className="shape shape-one" />
           <div className="shape shape-two" />
           <div className="relative mx-auto w-full max-w-[1440px]">
-            {/* Imagen del Banner */}
+            {/* Imagen del Banner (Responsive Desktop y Móvil) */}
             <div className="overflow-hidden rounded-2xl md:rounded-[2rem] border border-white/90 bg-white shadow-[0_20px_50px_rgba(58,70,133,0.12)]">
-              <img
-                src={bannerHero}
-                alt="Banner V Curso Internacional de Enfermería Pediátrica"
-                className="w-full h-auto object-cover block"
-              />
+              <picture>
+                <source media="(max-width: 767px)" srcSet={bannerHeroMobile} />
+                <img
+                  src={bannerHero}
+                  alt="Banner V Curso Internacional de Enfermería Pediátrica"
+                  className="w-full h-auto object-cover block"
+                />
+              </picture>
             </div>
 
             {/* Cards de Fecha, Modalidad y Organiza */}
