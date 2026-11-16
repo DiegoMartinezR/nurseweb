@@ -25,6 +25,11 @@
     cursor: pointer;
   }
 
+  p {
+    font-size: 15px;
+    line-height: 1.65;
+  }
+
   ::selection {
     background: #f7aed5;
     color: #143f68;
@@ -257,7 +262,7 @@
 
 .info-pill small {
   color: #e12686;
-  font-size: 0.68rem;
+  font-size: 13px;
   font-weight: 800;
   text-transform: uppercase;
   letter-spacing: 0.12em;
@@ -267,7 +272,8 @@
   margin-top: 0.2rem;
   overflow: hidden;
   color: #224f75;
-  font-size: 0.88rem;
+  font-size: 16px;
+  font-weight: 800;
   text-overflow: ellipsis;
   white-space: nowrap;
 }
@@ -280,12 +286,13 @@
   display: inline-block;
   border-radius: 999px;
   background: #ddf5f5;
-  padding: 0.55rem 1rem;
+  padding: 0.6rem 1.25rem;
   color: #048f9f;
-  font-size: 0.65rem;
+  font-size: 14px;
   font-weight: 800;
   text-transform: uppercase;
-  letter-spacing: 0.15em;
+  letter-spacing: 0.14em;
+  box-shadow: 0 4px 12px rgba(4, 143, 159, 0.15);
 }
 
 .section-heading h2 {
@@ -306,7 +313,8 @@
   margin: 1rem auto 0;
   max-width: 30rem;
   color: #6b8098;
-  font-size: 0.9rem;
+  font-size: 15px;
+  line-height: 1.6;
 }
 
 .soft-card {
@@ -375,15 +383,15 @@
 }
 
 .pillar-card p {
-  margin-top: 0.4rem;
-  max-width: 12rem;
-  color: rgba(255, 255, 255, 0.8);
-  font-size: 0.85rem;
-  line-height: 1.5;
+  margin-top: 0.5rem;
+  max-width: 14rem;
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 14px;
+  line-height: 1.6;
 }
 
 .day-tab {
-  min-width: 8.2rem;
+  min-width: 8.5rem;
   border: 1px solid #d8e4f1;
   border-radius: 1rem;
   background: rgba(255, 255, 255, 0.78);
@@ -398,15 +406,17 @@
 }
 
 .day-tab small {
-  font-size: 0.56rem;
+  font-size: 12px;
   font-weight: 800;
   text-transform: uppercase;
-  letter-spacing: 0.13em;
+  letter-spacing: 0.12em;
 }
 
 .day-tab b {
-  margin-top: 0.1rem;
+  margin-top: 0.15rem;
   font-family: "Nunito", sans-serif;
+  font-size: 16px;
+  font-weight: 800;
 }
 
 .day-tab.active {
@@ -440,11 +450,13 @@
 
 .program-main > div > p {
   color: #7890a6;
-  font-size: 0.75rem;
+  font-size: 14px;
+  margin-top: 0.25rem;
 }
 
 .program-kicker {
-  font-size: 0.62rem;
+  display: inline-block;
+  font-size: 14px;
   font-weight: 800;
   text-transform: uppercase;
   letter-spacing: 0.14em;
@@ -534,9 +546,9 @@
   flex: none;
   border-radius: 999px;
   background: #078fa5;
-  padding: 0.45rem 0.8rem;
+  padding: 0.45rem 0.9rem;
   color: white;
-  font-size: 0.65rem;
+  font-size: 14px;
   font-weight: 800;
   letter-spacing: 0.1em;
   text-transform: uppercase;
@@ -553,7 +565,7 @@
 
 .block-divider small {
   color: #8597aa;
-  font-size: 0.55rem;
+  font-size: 12px;
   font-weight: 800;
   letter-spacing: 0.1em;
   text-transform: uppercase;
@@ -562,23 +574,25 @@
 .block-divider b {
   margin-top: 0.15rem;
   color: #2d5c82;
-  font-size: 0.75rem;
+  font-size: 16px;
+  font-weight: 800;
 }
 
 .break-row {
   display: flex;
   align-items: center;
-  gap: 0.55rem;
-  margin: 0.55rem 0;
+  gap: 0.65rem;
+  margin: 0.65rem 0;
   border: 1px dashed #e2b9d5;
   border-radius: 0.75rem;
   background: #fff3f9;
-  padding: 0.65rem 0.8rem;
+  padding: 0.75rem 1rem;
   color: #c52a80;
 }
 
 .break-row b {
-  font-size: 0.68rem;
+  font-size: 14px;
+  font-weight: 800;
   text-transform: uppercase;
   letter-spacing: 0.08em;
 }
@@ -586,7 +600,7 @@
 .break-row time {
   margin-left: auto;
   color: #965676;
-  font-size: 0.66rem;
+  font-size: 14px;
   font-weight: 700;
 }
 
@@ -611,7 +625,8 @@
 }
 
 .workshop-card > span {
-  font-size: 0.62rem;
+  display: inline-block;
+  font-size: 14px;
   font-weight: 800;
   text-transform: uppercase;
   letter-spacing: 0.16em;
@@ -628,7 +643,7 @@
 .workshop-card p {
   margin-top: 1rem;
   color: rgba(255, 255, 255, 0.95);
-  font-size: 0.88rem;
+  font-size: 14px;
   font-weight: 600;
   line-height: 1.7;
   white-space: pre-line;
@@ -658,14 +673,14 @@
   background: rgba(255, 255, 255, 0.78);
   padding: 0.9rem;
   color: #35668e;
-  font-size: 0.9rem;
+  font-size: 15px;
   font-weight: 700;
   box-shadow: 0 7px 20px rgba(50, 68, 116, 0.05);
 }
 
 .topic-chip span {
   color: #df2187;
-  font-size: 0.72rem;
+  font-size: 14px;
   font-weight: 800;
 }
 
@@ -692,13 +707,15 @@
 .info-card b {
   margin-top: 0.8rem;
   color: #165c92;
-  font-size: 1.02rem;
+  font-size: 17px;
+  font-weight: 800;
 }
 
 .info-card small {
-  margin-top: 0.2rem;
+  margin-top: 0.35rem;
   color: #7890a6;
-  font-size: 0.82rem;
+  font-size: 14px;
+  line-height: 1.5;
 }
 
 .register-card {
@@ -724,7 +741,9 @@
 
 .register-card p {
   margin-top: 1rem;
-  color: rgba(255, 255, 255, 0.76);
+  color: rgba(255, 255, 255, 0.85);
+  font-size: 15px;
+  line-height: 1.65;
 }
 
 .register-heart {
@@ -747,12 +766,13 @@
   display: inline-flex;
   border-radius: 999px;
   background: #e2f8f7;
-  padding: 0.5rem 0.85rem;
+  padding: 0.6rem 1.25rem;
   color: #048f9f;
-  font-size: 0.64rem;
+  font-size: 14px;
   font-weight: 800;
   letter-spacing: 0.12em;
   text-transform: uppercase;
+  box-shadow: 0 4px 12px rgba(4, 143, 159, 0.15);
 }
 
 .service-story h3 {
@@ -770,7 +790,7 @@
   max-width: 47rem;
   margin-top: 1rem;
   color: #58708d;
-  font-size: 0.92rem;
+  font-size: 15px;
   line-height: 1.75;
 }
 
@@ -799,8 +819,8 @@
 
 .institutional-quote span {
   margin-top: 1.5rem;
-  color: rgba(255, 255, 255, 0.72);
-  font-size: 0.7rem;
+  color: rgba(255, 255, 255, 0.85);
+  font-size: 14px;
   font-weight: 700;
 }
 
@@ -836,14 +856,14 @@
   margin-top: 1.2rem;
   color: #225b87;
   font-family: "Nunito", sans-serif;
-  font-size: 1.08rem;
+  font-size: 1.15rem;
   font-weight: 900;
 }
 
 .service-value-card p {
-  margin-top: 0.55rem;
+  margin-top: 0.65rem;
   color: #6b8098;
-  font-size: 0.8rem;
+  font-size: 14px;
   line-height: 1.65;
 }
 
@@ -885,7 +905,7 @@
 
 .welcome-strip small {
   color: #df2187;
-  font-size: 0.6rem;
+  font-size: 13px;
   font-weight: 800;
   letter-spacing: 0.12em;
   text-transform: uppercase;
@@ -894,15 +914,16 @@
 .welcome-strip b {
   margin-top: 0.2rem;
   color: #225b87;
-  font-size: 0.82rem;
+  font-size: 16px;
+  font-weight: 800;
 }
 
 .welcome-strip p {
   max-width: 35rem;
   color: #698098;
-  font-size: 0.75rem;
+  font-size: 14px;
   font-weight: 600;
-  line-height: 1.55;
+  line-height: 1.6;
   text-align: right;
 }
 

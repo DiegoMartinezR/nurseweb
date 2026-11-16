@@ -550,17 +550,17 @@ export default function Welcome({ auth }: PageProps) {
                     <Icon name="heart" />
                   </span>
                   <span>
-                    <b className="block text-sm">
+                    <b className="block text-[16px] font-bold text-[#155b94]">
                       Servicio de Medicina B · Departamento de Enfermería
                     </b>
-                    <small className="text-[#7288a0]">
+                    <small className="text-[#7288a0] text-[14px]">
                       Ciencia en nuestros cuidados, humanidad en nuestras acciones
                     </small>
                   </span>
                 </div>
               </article>
               <aside className="stat-card">
-                <span className="text-xs font-extrabold uppercase tracking-[.18em] text-white/75">
+                <span className="text-[14px] font-extrabold uppercase tracking-[.18em] text-white/90">
                   Nos reunimos para
                 </span>
                 <b className="mt-8 block text-[76px] leading-none">03</b>
@@ -735,7 +735,7 @@ export default function Welcome({ auth }: PageProps) {
         <section id="registro" className="scroll-mt-20 px-[5%] pb-12 pt-16">
           <div className="register-card mx-auto w-full max-w-[1440px]">
             <div className="relative z-10 max-w-[600px]">
-              <span className="text-xs font-extrabold uppercase tracking-[.2em] text-white/75">
+              <span className="text-[14px] font-extrabold uppercase tracking-[.2em] text-white/90">
                 La cuenta regresiva comenzó
               </span>
               <h2>Haz visible el cuidado que transforma.</h2>
@@ -747,7 +747,7 @@ export default function Welcome({ auth }: PageProps) {
                 {Object.entries(countdown).map(([label, number]) => (
                   <div key={label} className="text-center">
                     <b className="block text-3xl">{String(number).padStart(2, '0')}</b>
-                    <small className="text-[9px] font-bold uppercase tracking-wider text-white/70">
+                    <small className="text-[12px] font-bold uppercase tracking-wider text-white/80">
                       {label}
                     </small>
                   </div>
@@ -871,7 +871,7 @@ export default function Welcome({ auth }: PageProps) {
               alt="Instituto Nacional de Salud del Niño, Departamento de Enfermería"
               className="h-16 w-auto max-w-[320px] object-contain sm:h-20 sm:max-w-[520px]"
             />
-            <p className="text-center text-xs text-[#7088a1]">
+            <p className="text-center text-[14px] text-[#7088a1]">
               V Curso Internacional de Enfermería Pediátrica · INSN-Breña · Perú
             </p>
             <span className="text-sm font-bold text-[#dd2085]">Servicio de Medicina B</span>
