@@ -3,6 +3,20 @@ import { Head, Link } from '@inertiajs/react';
 import { PageProps } from '@/types';
 import insnLogo from '../assets/insn-enfermeria-logo.png';
 import nursesTeam from '../assets/enfermeras-medicina-b.png';
+import bannerHero from '../assets/bannerhero.png';
+import flagPe from '../assets/flags/pe.svg';
+import flagMx from '../assets/flags/mx.svg';
+import flagAr from '../assets/flags/ar.svg';
+import flagCl from '../assets/flags/cl.svg';
+import flagPa from '../assets/flags/pa.svg';
+
+const participatingCountries = [
+  { name: 'Perú', src: flagPe },
+  { name: 'México', src: flagMx },
+  { name: 'Argentina', src: flagAr },
+  { name: 'Chile', src: flagCl },
+  { name: 'Panamá', src: flagPa },
+];
 
 type IconName =
   | 'arrow'
@@ -439,51 +453,66 @@ export default function Welcome({ auth }: PageProps) {
         </header>
 
         {/* Sección Hero */}
-        <section id="inicio" className="relative px-[5%] pb-20 pt-8">
+        <section id="inicio" className="relative px-[5%] pb-10 pt-6 sm:pt-8">
           <div className="shape shape-one" />
           <div className="shape shape-two" />
           <div className="relative mx-auto w-full max-w-[1440px]">
-            <div className="hero-card">
-              <div className="relative z-10 max-w-[600px] p-7 pb-10 sm:p-12 lg:p-16">
-                <span className="mb-5 inline-flex rounded-full bg-white/80 px-4 py-2 text-[10px] font-extrabold uppercase tracking-[.18em] text-[#086aac] shadow-sm">
-                  Impulsando la imagen social de enfermería
-                </span>
-              
-                <h1 className="hero-title">
-                  V Curso Internacional de
-                  <span className="mt-6 block leading-snug sm:mt-4">Enfermería Pediátrica</span>
-                </h1>
-                <div className="mt-7 inline-block -rotate-1 rounded-[18px_8px_18px_8px] bg-[#e51d86] px-5 py-3 text-lg font-extrabold text-white shadow-[0_8px_0_#a91b78] sm:text-2xl">
-                  Cuidado visible y reconocido
-                </div>
-                <div className="mt-9 flex flex-wrap gap-3">
-                  <button onClick={() => scrollTo('programa')} className="btn-primary">
-                    Ver programa <Icon name="arrow" className="h-4 w-4" />
-                  </button>
-                  <button onClick={() => scrollTo('registro')} className="btn-secondary">
-                    Reservar mi lugar
-                  </button>
-                </div>
-              </div>
-              <div className="hero-photo-wrap">
-                <div className="heart-line">
-                  <Icon name="heart" className="h-12 w-12" />
-                </div>
-                <img
-                  src="https://images.unsplash.com/photo-1755189118414-14c8dacdb082?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&q=90&w=1000"
-                  alt="Profesionales de enfermería en un entorno pediátrico"
-                  className="hero-photo"
-                />
-              </div>
-              <span className="confetti confetti-a" />
-              <span className="confetti confetti-b" />
-              <span className="confetti confetti-c" />
+            {/* Imagen del Banner */}
+            <div className="overflow-hidden rounded-2xl md:rounded-[2rem] border border-white/90 bg-white shadow-[0_20px_50px_rgba(58,70,133,0.12)]">
+              <img
+                src={bannerHero}
+                alt="Banner V Curso Internacional de Enfermería Pediátrica"
+                className="w-full h-auto object-cover block"
+              />
             </div>
 
-            <div className="relative z-20 mx-auto -mt-5 grid w-full max-w-[980px] gap-3 px-4 sm:grid-cols-3 sm:px-9">
+            {/* Cards de Fecha, Modalidad y Organiza */}
+            <div className="relative z-20 mx-auto -mt-5 sm:-mt-8 grid w-full max-w-[980px] gap-3 px-4 sm:grid-cols-3 sm:px-9">
               <InfoPill icon="calendar" label="Fecha" value="25, 26 y 27 de noviembre" />
               <InfoPill icon="location" label="Modalidad" value="Aula Virtual INSN-Breña" />
               <InfoPill icon="users" label="Organiza" value="Servicio de Medicina B" />
+            </div>
+          </div>
+        </section>
+
+        {/* Marquesina infinita con las banderas (Sección: 150px alto, Banderas: 90px alto) */}
+        <section
+          aria-label="Países participantes"
+          className="relative w-full h-[150px] overflow-hidden flex items-center bg-white/70 border-y border-[#dce8f4] shadow-[inset_0_1px_4px_rgba(0,0,0,0.02)]"
+        >
+          <div className="marquee-container w-full h-full flex items-center">
+            {/* Pista 1 */}
+            <div className="marquee-content">
+              {[...participatingCountries, ...participatingCountries].map((country, idx) => (
+                <div
+                  key={`track1-${country.name}-${idx}`}
+                  className="flex items-center justify-center flex-shrink-0"
+                >
+                  <img
+                    src={country.src}
+                    alt={`Bandera de ${country.name}`}
+                    title={country.name}
+                    className="h-[90px] w-auto aspect-[3/2] object-cover rounded-xl shadow-md border border-[#c9d8f0]/90 transition-transform duration-300 hover:scale-105"
+                  />
+                </div>
+              ))}
+            </div>
+
+            {/* Pista 2 (duplicada para bucle infinito continuo) */}
+            <div className="marquee-content" aria-hidden="true">
+              {[...participatingCountries, ...participatingCountries].map((country, idx) => (
+                <div
+                  key={`track2-${country.name}-${idx}`}
+                  className="flex items-center justify-center flex-shrink-0"
+                >
+                  <img
+                    src={country.src}
+                    alt={`Bandera de ${country.name}`}
+                    title={country.name}
+                    className="h-[90px] w-auto aspect-[3/2] object-cover rounded-xl shadow-md border border-[#c9d8f0]/90 transition-transform duration-300 hover:scale-105"
+                  />
+                </div>
+              ))}
             </div>
           </div>
         </section>
