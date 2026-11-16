@@ -391,13 +391,20 @@
 }
 
 .day-tab {
-  min-width: 8.5rem;
+  min-width: 0;
   border: 1px solid #d8e4f1;
   border-radius: 1rem;
   background: rgba(255, 255, 255, 0.78);
   padding: 0.8rem 1.2rem;
   color: #69829b;
+  text-align: center;
   transition: 0.2s ease;
+}
+
+@media (min-width: 640px) {
+  .day-tab {
+    min-width: 8.5rem;
+  }
 }
 
 .day-tab small,
@@ -742,7 +749,7 @@
 .register-card p {
   margin-top: 1rem;
   color: rgba(255, 255, 255, 0.85);
-  font-size: 15px;
+  font-size: 16px;
   line-height: 1.65;
 }
 
@@ -790,7 +797,7 @@
   max-width: 47rem;
   margin-top: 1rem;
   color: #58708d;
-  font-size: 15px;
+  font-size: 16px;
   line-height: 1.75;
 }
 
@@ -863,7 +870,7 @@
 .service-value-card p {
   margin-top: 0.65rem;
   color: #6b8098;
-  font-size: 14px;
+  font-size: 16px;
   line-height: 1.65;
 }
 

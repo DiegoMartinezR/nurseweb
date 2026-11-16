@@ -615,12 +615,16 @@ export default function Welcome({ auth }: PageProps) {
               </h2>
               <p>Selecciona un día para explorar las actividades.</p>
             </div>
-            <div className="mt-10 flex justify-center gap-2 overflow-x-auto pb-2 pt-2">
+            <div className="mt-10 grid grid-cols-2 gap-3 max-w-[340px] mx-auto sm:max-w-none sm:flex sm:justify-center sm:gap-3 pb-2 pt-2 px-2 sm:px-0">
               {program.map((day, index) => (
                 <button
                   key={day.short}
                   onClick={() => setActiveDay(index)}
-                  className={`day-tab ${activeDay === index ? 'active' : ''}`}
+                  className={`day-tab ${activeDay === index ? 'active' : ''} ${
+                    index === 2
+                      ? 'col-span-2 justify-self-center w-full max-w-[calc(50%-6px)] sm:max-w-none sm:w-auto'
+                      : 'w-full sm:w-auto'
+                  }`}
                 >
                   <small>Día 0{index + 1}</small>
                   <b>{day.short}</b>
@@ -816,7 +820,7 @@ export default function Welcome({ auth }: PageProps) {
                   <Icon name="plus" className="h-6 w-6" />
                 </span>
                 <h3>Cuidado seguro y especializado</h3>
-                <p>
+                <p >
                   Promovemos la seguridad del paciente, la mejora continua y una atención de calidad
                   que respeta siempre la dignidad humana.
                 </p>
