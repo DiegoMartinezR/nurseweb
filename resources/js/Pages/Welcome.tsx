@@ -170,13 +170,14 @@ const program: Array<{
         time: '16:15',
         end: '17:30',
         title: 'Retos de la gestión de enfermería en sistemas de salud actuales',
-        speaker: 'Mesa redonda internacional',
+        speaker:
+          'Mesa redonda internacional:\nDra. Elizabeth Tiburcio Ampudia\nMg. Miriam Anchante Saravia\nMg. Lourdes Castillo Gonzales',
       },
     ],
     workshop: {
       label: 'Moderadoras',
       title: 'Bloques I y II',
-      text: 'Lic. Gloria Castillo Ocaña · Lic. Karem Zegarra Almora',
+      text: 'Lic. Gloria Castillo Ocaña\nLic. Karem Zegarra Almora',
       time: '08:30 — 17:30',
     },
   },
@@ -239,13 +240,14 @@ const program: Array<{
         time: '16:15',
         end: '17:30',
         title: 'Experiencias exitosas en el cuidado visible y reconocido',
-        speaker: 'Mesa redonda internacional',
+        speaker:
+          'Mesa redonda internacional:\nMg. Ida Díaz\nMg. Mireylle Alejos García\nMg. Mirtha Caballero Vela',
       },
     ],
     workshop: {
       label: 'Moderadoras',
       title: 'Bloques III y IV',
-      text: 'Lic. Rosa Cruzado Bautista · Lic. Sarita Rayme Flores',
+      text: 'Lic. Rosa Cruzado Bautista\nLic. Sarita Rayme Flores',
       time: '09:00 — 17:30',
     },
   },
@@ -256,7 +258,7 @@ const program: Array<{
     title: 'Evidencia que transforma',
     color: 'purple',
     sessions: [
-      { type: 'block', name: 'Bloque V', moderator: 'Lic. Karim Salva Gárate' },
+      { type: 'block', name: 'Bloque V', moderator: 'Lic. Elizabeth Reques Robles' },
       {
         type: 'session',
         time: '09:00',
@@ -311,7 +313,7 @@ const program: Array<{
     workshop: {
       label: 'Moderadora',
       title: 'Bloque V',
-      text: 'Lic. Karim Salva Gárate',
+      text: 'Lic. Elizabeth Reques Robles',
       time: '09:00 — 14:30',
     },
   },
@@ -482,7 +484,7 @@ export default function Welcome({ auth }: PageProps) {
         {/* Marquesina infinita con las banderas (Fondo transparente, Banderas: 45px alto) */}
         <section
           aria-label="Países participantes"
-          className="relative w-full h-[120px] sm:h-[150px] overflow-hidden flex items-center bg-transparent"
+          className="relative w-full h-[120px] sm:h-[120px] overflow-hidden flex items-center bg-transparent"
         >
           <div className="marquee-container w-full h-full flex items-center">
             {/* Pista 1 */}
@@ -496,7 +498,7 @@ export default function Welcome({ auth }: PageProps) {
                     src={country.src}
                     alt={`Bandera de ${country.name}`}
                     title={country.name}
-                    className="h-[45px] w-auto aspect-[3/2] object-cover rounded-lg shadow-sm border border-[#c9d8f0]/80 transition-transform duration-300 hover:scale-110"
+                    className="h-[45px] w-auto aspect-[3/2] object-cover shadow-sm border border-[#c9d8f0]/80 transition-transform duration-300 hover:scale-110"
                   />
                 </div>
               ))}
@@ -513,7 +515,7 @@ export default function Welcome({ auth }: PageProps) {
                     src={country.src}
                     alt={`Bandera de ${country.name}`}
                     title={country.name}
-                    className="h-[45px] w-auto aspect-[3/2] object-cover rounded-lg shadow-sm border border-[#c9d8f0]/80 transition-transform duration-300 hover:scale-110"
+                    className="h-[45px] w-auto aspect-[3/2] object-cover shadow-sm border border-[#c9d8f0]/80 transition-transform duration-300 hover:scale-110"
                   />
                 </div>
               ))}
@@ -532,10 +534,7 @@ export default function Welcome({ auth }: PageProps) {
             </div>
             <div className="mt-10 grid gap-6 lg:grid-cols-[1.3fr_.7fr]">
               <article className="soft-card p-7 sm:p-10">
-                <p className="text-lg font-bold leading-8 text-[#086aac]">
-                  Enfermeras y enfermeros de Latinoamérica:
-                </p>
-                <p className="mt-4 leading-7 text-[#58708d]">
+                <p className="leading-7 text-[#58708d]">
                   El Servicio de Medicina B del Instituto Nacional de Salud del Niño–Breña los invita
                   a un espacio académico para compartir conocimientos, promover la investigación,
                   fortalecer las competencias profesionales y visibilizar el impacto del cuidado
@@ -671,8 +670,10 @@ export default function Welcome({ auth }: PageProps) {
                           <small>— {item.end}</small>
                         </time>
                         <div>
-                          <b>{item.title}</b>
-                          <span>{item.speaker}</span>
+                          <b className="text-[16px] leading-snug text-[#174b75]">{item.title}</b>
+                          <span className="text-[13px] font-semibold text-[#037c94] mt-1 block whitespace-pre-line leading-relaxed">
+                            {item.speaker}
+                          </span>
                         </div>
                       </div>
                     );
@@ -682,7 +683,9 @@ export default function Welcome({ auth }: PageProps) {
               <aside className={`workshop-card ${program[activeDay].color}`}>
                 <span>{program[activeDay].workshop.label}</span>
                 <h3>{program[activeDay].workshop.title}</h3>
-                <p>{program[activeDay].workshop.text}</p>
+                <p className="whitespace-pre-line leading-relaxed font-semibold text-white/95">
+                  {program[activeDay].workshop.text}
+                </p>
                 <div className="mt-auto flex items-center gap-2 pt-8 font-bold">
                   <Icon name="clock" className="h-4 w-4" />
                   {program[activeDay].workshop.time}
