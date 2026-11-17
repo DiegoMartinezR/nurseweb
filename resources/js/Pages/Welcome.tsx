@@ -264,7 +264,7 @@ const program: Array<{
         time: '09:00',
         end: '10:00',
         title: 'Del diagnóstico enfermero a los resultados en salud: el PAE como herramienta para investigar',
-        speaker: 'Lic. Lilian Torres Ascurra · INSN, Perú',
+        speaker: 'Lic. Lilian Torres Escurra · INSN, Perú',
       },
       {
         type: 'session',
